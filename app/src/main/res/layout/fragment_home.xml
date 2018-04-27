@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zugogo.app.view.frament.impl.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:canLoop="true" />
+    </LinearLayout>
+
+    <com.zugogo.app.view.customize.layout.OnLoadLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:background="#ffffff"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="true"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="2.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_hot_spots"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:scrollbarStyle="outsideOverlay" />
+
+                <com.sunfusheng.marqueeview.MarqueeView
+                    android:id="@+id/marqueeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mvAnimDuration="1000"
+                    app:mvDirection="bottom_to_top"
+                    app:mvInterval="2000"
+                    app:mvSingleLine="true"
+                    app:mvTextColor="@android:color/holo_red_light"
+                    app:mvTextSize="16sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.zugogo.app.view.customize.layout.OnLoadLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#81af3a"
+            android:text="會員登入"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#0075ac"
+            android:text="註冊會員"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

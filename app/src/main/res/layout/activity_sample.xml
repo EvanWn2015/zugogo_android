@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zugogo.app.sample.SampleActivity">
+
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主功能頁面" />
+
+    <Button
+        android:id="@+id/btn_sample_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加載＆刷新資料" />
+
+    <Button
+        android:id="@+id/btn_sample_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/btn_sample_network_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="網路圖片加載" />
+
+    <Button
+        android:id="@+id/btn_sample_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跑馬燈" />
+
+    <Button
+        android:id="@+id/btn_get_gcm_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GCM Token" />
+
+    <Button
+        android:id="@+id/btn_external_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="google map 導航" />
+
+    <Button
+        android:id="@+id/btn_scan_rq_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="掃描QR Code" />
+
+
+    <Button
+        android:id="@+id/btn_sample_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web Javascript" />
+
+
+</LinearLayout>

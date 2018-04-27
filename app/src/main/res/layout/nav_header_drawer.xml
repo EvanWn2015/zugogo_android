@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menu_header_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="18dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="38dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@drawable/logo_nemu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:paddingTop="18dp"
+        android:text="王大一 歡迎回來"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zugogo.app">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".view.activity.IntroActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="gcm.play.android.samples.com.gcmquickstart" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".service.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".service.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name=".service.RegistrationIntentService"
+            android:exported="false" />
+        <!--
+       ATTENTION: This was auto-generated to add Google Play services to your project for
+           App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".sample.ListViewSampleActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.activity.DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.customize.layout.QRcodeCaptureActivity"
+            android:label="@string/title_activity_qrcode_capture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sample.MarqueeSampleActivity"
+            android:label="@string/title_activity_marquee_sample"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sample.NetworkImageSampleActivity"
+            android:label="@string/title_activity_network_image_sample"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sample.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sample.WebViewActivity"
+            android:label="@string/title_activity_web_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sample.SampleActivity"
+            android:label="@string/title_activity_sample"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

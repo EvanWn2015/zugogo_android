@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#0080B5</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimaryDark">#0080B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Toolbar -->
+    <color name="tool_bar_start_color">#0080B5</color>
+    <color name="tool_bar_end_color">#8CB842</color>
+    <color name="tool_bar_center_color">#8CB842</color>
+
+    <!-- menu item  -->
+    <color name="menu_header_background">#0080B5</color>
+    <color name="menu_background">#0080B5</color>
+    <color name="menu_item_font_default">#FFFFFF</color>
+    <color name="menu_item_font_activated">#FFFFFF</color>
+    <color name="menu_item_vip_font_default">#FFFF66</color>
+    <color name="menu_item_vip_font_activated">#FFFFCC</color>
+    <color name="menu_item_default">#0080B5</color>
+    <color name="menu_item_activated">#006088</color>
+    <color name="menu_item_border_default">#3399C4</color>
+    <color name="menu_item_border_activated">#00405B</color>
+    <color name="menu_item_icon_default">#99c5ce</color>
+    <color name="menu_item_icon_activated">#FFFFFF</color>
+
+</resources>

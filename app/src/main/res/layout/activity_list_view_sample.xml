@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zugogo.app.sample.ListViewSampleActivity">
+
+    <com.zugogo.app.view.customize.layout.OnLoadLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list_view_with_empty_view_fragment_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="true"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/list_view_with_empty_view_fragment_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:scrollbarStyle="outsideOverlay" />
+
+                <com.sunfusheng.marqueeview.MarqueeView
+                    android:id="@+id/marqueeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mvAnimDuration="1000"
+                    app:mvDirection="bottom_to_top"
+                    app:mvInterval="2000"
+                    app:mvSingleLine="true"
+                    app:mvTextColor="@android:color/holo_red_light"
+                    app:mvTextSize="16sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.zugogo.app.view.customize.layout.OnLoadLayout>
+
+</LinearLayout>

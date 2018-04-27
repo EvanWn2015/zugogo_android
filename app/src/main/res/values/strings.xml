@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ZugogoApp</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_qrcode_capture">QRcodeCaptureActivity</string>
+    <string name="title_activity_marquee_sample">MarqueeSampleActivity</string>
+    <string name="title_activity_network_image_sample">NetworkImageSampleActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+
+    <!-- Shared Preferences Key -->
+    <string name="shared_key">ZUGOGO_APP</string>
+    <string name="shared_is_login">IS_LOGIN</string>
+    <string name="shared_access_token">ACCESS_TOKEN</string>
+    <string name="shared_account_token">ACCOUNT_TOKEN</string>
+    <string name="shared_gcm_token">GCM_TOKEN</string>
+    <string name="shared_has_wallet">HAS_WALLET</string>
+
+    <!-- Menu Text -->
+    <string name="menu_text_home">首頁</string>
+    <string name="menu_text_hot_spots">熱點列表</string>
+    <string name="menu_text_rental">租借機車</string>
+    <string name="menu_text_e_wallet">電子錢包</string>
+    <string name="menu_text_ride_record">騎乘紀錄</string>
+    <string name="menu_text_vip">VIP 會員</string>
+    <string name="menu_text_marketing_activities">行銷活動</string>
+    <string name="menu_text_attractions">旅遊行程規劃</string>
+    <string name="menu_text_member_management">會員資料管理</string>
+    <string name="menu_text_help">使用說明</string>
+    <string name="menu_text_logout">登出</string>
+    <string name="title_activity_sample">SampleActivity</string>
+
+</resources>
